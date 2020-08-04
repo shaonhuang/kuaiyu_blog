@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="82px" viewBox="0 0 128 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.847000 0 0 0 0 0.847000 0 0 0 0 0.847000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-656.000000, -107.000000)">
+            <g filter="url(#filter-1)" id="编组">
+                <g transform="translate(659.000000, 108.000000)">
+                    <path d="M0,47.5 L122,47.5 L0,47.5 Z" id="Fill-1" fill="#F7B62D"></path>
+                    <line x1="122" y1="47.5" x2="0" y2="47.5" id="Stroke-3" stroke="#F7B62D" stroke-width="5" stroke-linecap="round"></line>
+                    <path d="M64.5,61 L64.5,23 L64.5,61 Z" id="Fill-4" fill="#F7B62D"></path>
+                    <line x1="64.5" y1="61" x2="64.5" y2="23" id="Stroke-5" stroke="#231916" stroke-width="3" stroke-linecap="round"></line>
+                    <g transform="translate(45.000000, 0.000000)">
+                        <path d="M19.5004,34.6134815 C10.4333365,34.7151561 2.58637776,28.4603195 0.848475039,19.9739079 C-0.766244027,12.0891155 3.22202674,3.89245049 10.6647725,0.0546264194" id="Fill-6" fill="#F7B62D"></path>
+                        <path d="M19.5004,34.6134815 C10.4333365,34.7151561 2.58637776,28.4603195 0.848475039,19.9739079 C-0.766244027,12.0891155 3.22202674,3.89245049 10.6647725,0.0546264194" id="Stroke-7" stroke="#231916" stroke-width="1.68" stroke-linecap="round"></path>
+                    </g>
+                    <g transform="translate(38.000000, 35.000000)">
+                        <line x1="0.58127" y1="42.5294901" x2="0.58127" y2="0.4888869" id="Fill-8" fill="#F7B62D"></line>
+                        <line x1="0.58127" y1="42.5294901" x2="0.58127" y2="0.4888869" id="Stroke-9" stroke="#231916" stroke-width="2.4" stroke-linecap="round"></line>
+                    </g>
+                    <g transform="translate(39.000000, 48.000000)">
+                        <path d="M44.5886772,21.0855909 C41.9292073,22.1688563 31.845229,25.9658524 19.0757336,23.8343171 C8.72862558,22.1073493 2.38268285,17.4497855 0.0926576163,15.5881386 C13.7679569,10.4825282 27.4437877,5.37744805 41.119087,0.272367896" id="Fill-10" fill="#F7B62D"></path>
+                        <path d="M44.5886772,21.0855909 C41.9292073,22.1688563 31.845229,25.9658524 19.0757336,23.8343171 C8.72862558,22.1073493 2.38268285,17.4497855 0.0926576163,15.5881386 C13.7679569,10.4825282 27.4437877,5.37744805 41.119087,0.272367896" id="Stroke-11" stroke="#231916" stroke-width="2" stroke-linecap="round"></path>
+                    </g>
+                    <g transform="translate(64.000000, 7.000000)">
+                        <path d="M0.00810294118,34.8653234 C8.87515769,34.9669981 16.5490217,28.7121614 18.2485884,20.2257499 C19.8276886,12.3409574 15.9273944,4.14429242 8.64934844,0.306468355" id="Fill-12" fill="#F7B62D"></path>
+                        <path d="M0.00810294118,34.8653234 C8.87515769,34.9669981 16.5490217,28.7121614 18.2485884,20.2257499 C19.8276886,12.3409574 15.9273944,4.14429242 8.64934844,0.306468355" id="Stroke-13" stroke="#231916" stroke-width="1.68" stroke-linecap="round"></path>
+                    </g>
+                    <g transform="translate(90.000000, 9.000000)">
+                        <path d="M4.91770667,69.524372 C5.57070446,66.7565027 8.35042449,54.3495577 7.8800869,37.0237707 C7.21564174,12.572854 0.695120321,1.05042599 0.282517294,0.350819899" id="Fill-14" fill="#F7B62D"></path>
+                        <path d="M4.91770667,69.524372 C5.57070446,66.7565027 8.35042449,54.3495577 7.8800869,37.0237707 C7.21564174,12.572854 0.695120321,1.05042599 0.282517294,0.350819899" id="Stroke-15" stroke="#231916" stroke-width="2" stroke-linecap="round"></path>
+                    </g>
+                    <g transform="translate(21.000000, 10.000000)">
+                        <path d="M3.224,69.4803615 C2.57100221,66.7124923 -0.209215537,54.306074 0.261619763,36.9802871 C0.925567215,12.5288435 7.44658635,1.00641552 7.85918937,0.307336243" id="Fill-16" fill="#F7B62D"></path>
+                        <path d="M3.224,69.4803615 C2.57100221,66.7124923 -0.209215537,54.306074 0.261619763,36.9802871 C0.925567215,12.5288435 7.44658635,1.00641552 7.85918937,0.307336243" id="Stroke-17" stroke="#231916" stroke-width="2" stroke-linecap="round"></path>
+                    </g>
+                </g>
+            </g>
+            <text id="快宇Blog" font-family="MLingWaiMedium-SC, LingWai SC" font-size="36" font-weight="400" letter-spacing="6" fill="#FFFFFF">
+                <tspan x="648" y="226">快宇Blog</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
