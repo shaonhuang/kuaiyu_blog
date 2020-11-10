@@ -1,0 +1,33 @@
+#ScrollTwoBigWords {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#firstWord {
+  color: #fff;
+  display: block;
+  font-size: 1000%;
+  line-height: 1;
+  text-align: right;
+  letter-spacing: 0.382em;
+  /* line-height: 1; */
+  margin: 0;
+  padding: 0;
+  padding-right: 0;
+  padding-left: 32%;
+
+  /* -webkit-transform: translateX(40px); */
+}
+
+#secondWord {
+  color: #fff;
+  display: block;
+  font-size: 1000%;
+  letter-spacing: 0.382em;
+  text-align: left;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  padding-left: 2%;
+  padding-right: 32%;
+}

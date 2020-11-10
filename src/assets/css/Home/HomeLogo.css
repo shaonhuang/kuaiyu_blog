@@ -1,0 +1,20 @@
+.logo {
+  width: 12%;
+  height: 6%;
+  display: block;
+  padding-left: 44%;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logoText {
+  padding-top: 44px;
+  display: block;
+  color: #fff;
+  font-size: 240%;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}

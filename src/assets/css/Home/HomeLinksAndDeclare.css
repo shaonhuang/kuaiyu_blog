@@ -1,0 +1,50 @@
+#linksAndDeclare {
+  display: block;
+  background-color: lightgray;
+}
+
+#linksAndDeclareLeft {
+  display: inline-block;
+  width: 48%;
+}
+
+#linksAndDeclareLeftHeadline {
+  text-align: left;
+  padding-left: 34%;
+  padding-top: 2%;
+}
+
+#linksAndDeclareLeftHeadlineContent {
+  font-size: 312.8%;
+}
+
+#linksAndDeclareLeftContent {
+  font-size: 200%;
+  padding-left: 32%;
+  margin-left: 0;
+}
+
+#linksAndDeclareLeftContent ul li {
+  text-align: left;
+}
+
+#linksAndDeclareLeftContent ul li span {
+  padding: 1%;
+}
+
+#linksAndDeclareRight {
+  display: inline-block;
+  width: 48%;
+  padding-top: 1%;
+  font-size: 312.8%;
+  vertical-align: top;
+}
+
+#linksAndDeclareBottom {
+  display: block;
+  padding-bottom: 1%;
+}
+
+#linksAndDeclareBottom span {
+  font-size: 148%;
+}

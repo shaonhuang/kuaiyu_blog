@@ -1,0 +1,47 @@
+#threePics {
+  padding: 8%;
+
+  display: block;
+}
+#threePicsLeft {
+  vertical-align: middle;
+  width: 48%;
+
+  margin: 0;
+  display: inline-block;
+}
+#threePicsRight {
+  vertical-align: middle;
+  margin: 0;
+  width: 48%;
+  display: inline-block;
+}
+#threePicsFirst {
+  width: 90%;
+  position: relative;
+  z-index: 3;
+}
+#threePicsFirst img {
+  float: left;
+  margin-right: 10%;
+  width: 100%;
+}
+#threePicsSecond {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-bottom: 8%;
+}
+#threePicsSecond img {
+  width: 100%;
+}
+#threePicsThird {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+#threePicsThird img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
