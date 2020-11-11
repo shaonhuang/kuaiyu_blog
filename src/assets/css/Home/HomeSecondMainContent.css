@@ -1,6 +1,7 @@
 #secondMainContent {
   display: block;
   padding-top: 10%;
+  padding-left: 24px;
 }
 
 #secondMainContent {}
@@ -13,6 +14,8 @@
 #secondMainContentHeadLineText {
   color: #fff;
   font-weight: bold;
+  font-size: x-large;
+  letter-spacing: 2px;
 }
 
 #secondMainContentTextS {}
@@ -25,6 +28,10 @@
   text-align: left;
   padding-left: 20%;
   padding-right: 20%;
+}
+
+#secondMainContentTextContent strong {
+  color: yellow;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {}

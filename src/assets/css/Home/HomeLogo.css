@@ -1,8 +1,7 @@
-.logo {
-  width: 12%;
-  height: 6%;
+.logo { 
   display: block;
-  padding-left: 44%;
+  width: 100%;
+  margin-top: 44px;
 }
 
 .logo a {
@@ -10,11 +9,11 @@
 }
 
 .logoText {
-  padding-top: 44px;
   display: block;
   color: #fff;
-  font-size: 240%;
+  width: 100%;
+  font-size: 28px;
+  padding-top: 10px;
   text-align: center;
   cursor: pointer;
-  width: 100%;
 }

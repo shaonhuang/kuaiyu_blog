@@ -56,15 +56,15 @@
 
     <section id="secondMainContent">
       <div id="secondMainContentHeadLine">
-        <span id="secondMainContentHeadLineText">beyond boundaries</span>
+        <span id="secondMainContentHeadLineText">追逐的事情</span>
       </div>
       <div id="secondMainContentTextS">
         <h3 id="secondMainContentTextContent">
-          at abstraction, we go
-          <strong>beyond boundaries</strong>
-          in everything we do. by constantly pushing limits and exploring new
-          territory, we help ambitious partners succeed in multi-platform game
-          development and adaptations.
+          在小的时候，我时常会想这个互联网是怎么样运作的
+          ？长大后的我逐渐明白，每个点击背后的都有不计其数的
+          代码在为我们的点击事件的目的而运行。通过编程每个人都可以实现自己的价值，思想和想象力。传播出自己的声音，
+          让大家可以通过足不出户的交流成为一个大家庭。
+          <strong>stay hungry stay foolish</strong>
         </h3>
       </div>
     </section>
@@ -109,7 +109,7 @@
               </a>
             </li>
             <li>
-              <a href>
+              <a href="https://github.com/shaonhuang">
                 <span>GitHub</span>
               </a>
             </li>
@@ -128,20 +128,20 @@
         <div id="linksAndDeclareLeftContent">
           <ul>
             <li>
-              <a href>
+              <a href="https://space.bilibili.com/275587121">
                 <!-- <svg href > -->
                 <img src="~assets/img/logo/bilibili.svg" />
                 <span>BiliBili</span>
               </a>
             </li>
             <li>
-              <a href>
+              <a href="https://github.com/shaonhuang">
                 <img src="~assets/img/logo/github.svg" />
                 <span>GitHub</span>
               </a>
             </li>
             <li>
-              <a href>
+              <a @click="alertWeChatId()">
                 <img src="~assets/img/logo/wechat.svg" />
                 <span>WeChat</span>
               </a>
@@ -196,6 +196,9 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
+    alertWeChatId() {
+      alert("WeChatID:  wxid_dl12roffmg0q22");
+    },
     handleScroll(event) {
       // Any code to be executed when the window is scrolled
       let scroll = window.scrollY;
@@ -263,8 +266,9 @@ export default {
 }
 
 #playGame {
+  /* display: none; */
   position: absolute;
-  width: 30%;
+  width: 20%;
   top: 20%;
   left: 74%;
   text-align: center;

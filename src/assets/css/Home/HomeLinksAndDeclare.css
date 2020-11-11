@@ -1,4 +1,5 @@
 #linksAndDeclare {
+  /* display: none; */
   display: block;
   background-color: lightgray;
 }
@@ -10,41 +11,48 @@
 
 #linksAndDeclareLeftHeadline {
   text-align: left;
-  padding-left: 34%;
-  padding-top: 2%;
+  padding-left: 320px;
+  padding-top: 32px;
 }
 
 #linksAndDeclareLeftHeadlineContent {
-  font-size: 312.8%;
+  font-size: 32px;
 }
 
 #linksAndDeclareLeftContent {
-  font-size: 200%;
-  padding-left: 32%;
-  margin-left: 0;
+  padding-top: 48px;
+  padding-left: 312px;
+
 }
 
 #linksAndDeclareLeftContent ul li {
   text-align: left;
 }
 
+#linksAndDeclareLeftContent ul li a {
+  display: flex;
+  cursor: pointer;
+}
+
 #linksAndDeclareLeftContent ul li span {
-  padding: 1%;
+  font-size: 18px;
+  padding-left: 8px;
+  letter-spacing: 2px;
 }
 
 #linksAndDeclareRight {
   display: inline-block;
   width: 48%;
-  padding-top: 1%;
-  font-size: 312.8%;
+  padding-top: 32px;
+  font-size: 32px;
   vertical-align: top;
 }
 
 #linksAndDeclareBottom {
   display: block;
-  padding-bottom: 1%;
+  padding-top: 54px;
 }
 
 #linksAndDeclareBottom span {
-  font-size: 148%;
+  font-size: 14px;
 }

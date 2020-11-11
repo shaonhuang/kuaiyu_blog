@@ -1,17 +1,14 @@
 #firstMainContent {
+  /* display: none; */
   color: #fff;
-  padding-bottom: 14%;
+  padding-bottom: 348px;
 }
+
 #firstMainContentOne {
-  padding-top: 18%;
-  font-size: 180%;
-  display: inline-block;
-  justify-content: center;
+  padding-top: 324px;
+  font-size: x-large;
 }
+
 #firstMainContentTwo {
-  font-size: 180%;
-  display: flex;
-  padding-left: 14%;
-  padding-right: 14%;
-  justify-content: center;
+  font-size: x-large;
 }

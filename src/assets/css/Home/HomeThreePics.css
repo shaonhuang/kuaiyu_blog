@@ -1,45 +1,49 @@
 #threePics {
-  padding: 8%;
-
+  padding-top: 200px;
+  padding-bottom: 100px;
   display: block;
+  width: 100%;
+  height: 900px;
 }
+
 #threePicsLeft {
-  vertical-align: middle;
+  float: left;
+  padding-left: 48px;
+  padding-top: 244px;
   width: 48%;
 
-  margin: 0;
-  display: inline-block;
 }
+
 #threePicsRight {
   vertical-align: middle;
-  margin: 0;
+  float: left;
   width: 48%;
-  display: inline-block;
 }
+
 #threePicsFirst {
   width: 90%;
-  position: relative;
-  z-index: 3;
 }
+
 #threePicsFirst img {
-  float: left;
   margin-right: 10%;
   width: 100%;
 }
+
 #threePicsSecond {
-  position: relative;
-  z-index: 2;
   width: 100%;
   padding-bottom: 8%;
 }
+
 #threePicsSecond img {
   width: 100%;
 }
+
 #threePicsThird {
-  position: relative;
   width: 100%;
-  z-index: 2;
+  border: 2px solid black;
+  box-shadow: 10px 10px 5px #888888;
 }
+
 #threePicsThird img {
   width: 100%;
 }
