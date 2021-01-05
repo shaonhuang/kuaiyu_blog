@@ -10,7 +10,6 @@
             <span class="logoText">快宇Blog</span>
           </a>
         </div>
-
         <div id="playGame">
           <div id="playGameCircle">
             <span id="want">
@@ -88,7 +87,7 @@
         </div>
       </div>
     </section>
-    <section id="bottom">
+    <section id="bottom" style="display:block;">
       <div id="bottomContent">
         <div id="bottomTop">
           <span id="bottomTopContent">那我们就开始吧！</span>
@@ -266,7 +265,6 @@ export default {
 }
 
 #playGame {
-  /* display: none; */
   position: absolute;
   width: 20%;
   top: 20%;
@@ -276,11 +274,12 @@ export default {
 }
 #playGameCircle {
   display: block;
-  border: 3px solid orange;
+  /* border: 3px solid orange; */
   height: 150px;
   width: 150px;
   border-radius: 100%;
   text-align: center;
+  z-index: 999;
 }
 #want {
   display: block;
@@ -364,5 +363,21 @@ export default {
   99% {
     -webkit-transform: scale(1.01, 0.99);
   }
+}
+.el-col {
+  border-radius: 4px;
+}
+.bg-purple-dark {
+  background: #99a9bf;
+}
+.bg-purple {
+  background: #d3dce6;
+}
+.bg-purple-light {
+  background: #e5e9f2;
+}
+.grid-content {
+  border-radius: 4px;
+  min-height: 36px;
 }
 </style>

@@ -2,21 +2,30 @@
   /* display: none; */
   display: block;
   width: 100%;
-  height: 680px;
+  height: 840px;
   background-color: #fff;
+  animation: colorFadeOut ease 5s;
+}
+
+#bottom:hover {
+  /* background-color: #f6e043; */
+  animation: colorFadeIn ease 5s;
 }
 
 #bottomContent {
-  background-color: #fff;
   padding-bottom: 5%;
   height: 100%;
 }
 
+/* #bottomContent:hover {
+  background-color: #f6e043;
+} */
+
 #bottomTop {
-  padding-top: 10%;
+  padding-top: 14%;
   width: 100%;
   justify-content: center;
-  background-color: #fff;
+
 }
 
 #bottomTopContent {
@@ -30,7 +39,6 @@
   padding-top: 8.5%;
   padding-bottom: 8.5%;
   text-align: center;
-  background-color: #fff;
 
 }
 
@@ -57,8 +65,6 @@ li a {
   width: 33%;
   padding-top: 8.5%;
   padding-bottom: 8.5%;
-  background-color: #fff;
-
 }
 
 #bottomRightContent {
@@ -67,7 +73,6 @@ li a {
 
 #bottomMiddle {
   float: left;
-  background-color: #fff;
   width: 33%;
   height: 300px;
 
@@ -78,4 +83,25 @@ li a {
   padding-top: 17.5%;
   padding-bottom: 8.5%;
   margin: 0;
+}
+
+@-webkit-keyframes colorFadeIn {
+  from {
+    background-color: #fff;
+  }
+
+  to {
+    background-color: #f6e043;
+  }
+}
+
+@-webkit-keyframes colorFadeOut {
+  from {
+    background-color: #f6e043;
+  }
+
+  to {
+
+    background-color: #fff;
+  }
 }
