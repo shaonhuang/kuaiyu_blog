@@ -10,7 +10,7 @@
             <span class="logoText">快宇Blog</span>
           </a>
         </div>
-        <div id="playGame">
+        <div id="playGame" style="display:none;">
           <div id="playGameCircle">
             <span id="want">
               想
@@ -25,11 +25,11 @@
         </div>
       </header>
     </div>
-    <div class="menu">
+    <div class="menu" style="display:none">
       <a class="menuItem"><img /><span> 选单</span></a>
     </div>
     <section>
-      <div id="firstMainContent">
+      <div id="firstMainContent" class="slowShowUp50Percent">
         <p id="firstMainContentOne">干得好呀，在茫茫Blog里找到了快宇Blog。</p>
         <p id="firstMainContentTwo">
           一个小小的Web开发者的博客，所以我决定向 你分享在成为一个程序员的路上，
@@ -42,8 +42,8 @@
       <h1>
         <!-- <span>{{ position }}</span> -->
         <!-- :class="args" -->
-        <span id="firstWord">超越</span>
-        <span id="secondWord">极限</span>
+        <span id="firstWord" class="slowShowUp20Percent">超越</span>
+        <span id="secondWord" class="slowShowUp20Percent">极限</span>
       </h1>
     </section>
 
@@ -54,11 +54,11 @@
     </section>
 
     <section id="secondMainContent">
-      <div id="secondMainContentHeadLine">
+      <div id="secondMainContentHeadLine" class="notShow">
         <span id="secondMainContentHeadLineText">追逐的事情</span>
       </div>
       <div id="secondMainContentTextS">
-        <h3 id="secondMainContentTextContent">
+        <h3 id="secondMainContentTextContent" class="notShow">
           在小的时候，我时常会想这个互联网是怎么样运作的
           ？长大后的我逐渐明白，每个点击背后的都有不计其数的
           代码在为我们的点击事件的目的而运行。通过编程每个人都可以实现自己的价值，思想和想象力。传播出自己的声音，
@@ -124,29 +124,29 @@
         <div id="linksAndDeclareLeftHeadline">
           <span id="linksAndDeclareLeftHeadlineContent">社交号</span>
         </div>
-        <div id="linksAndDeclareLeftContent">
+        <div id="linksAndDeclareLeftContent" c>
           <ul>
-            <li>
+            <li class="notShow">
               <a href="https://space.bilibili.com/275587121">
                 <!-- <svg href > -->
                 <img src="~assets/img/logo/bilibili.svg" />
                 <span>BiliBili</span>
               </a>
             </li>
-            <li>
+            <li class="notShow">
               <a href="https://github.com/shaonhuang">
                 <img src="~assets/img/logo/github.svg" />
                 <span>GitHub</span>
               </a>
             </li>
-            <li>
+            <li class="notShow">
               <a @click="alertWeChatId()">
                 <img src="~assets/img/logo/wechat.svg" />
                 <span>WeChat</span>
               </a>
             </li>
-            <li>
-              <a href>
+            <li class="notShow">
+              <a href="www.linkedin.com/in/yukuaihuang">
                 <img src="~assets/img/logo/linkedin.svg" />
                 <span>Linkedin</span>
               </a>
@@ -190,6 +190,9 @@ export default {
   },
   created() {
     window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("scroll", this.slowShowSecondContentTitle);
+    window.addEventListener("scroll", this.slowShowSecondContent);
+    window.addEventListener("scroll", this.slowShowSocialIconTitle);
   },
   destroyed() {
     window.removeEventListener("scroll", this.handleScroll);
@@ -208,7 +211,7 @@ export default {
       var tmp = 0;
       var tmp2 = 0;
       var tmp3 = 0;
-      console.log(-firstX);
+      // console.log(-firstX);
       if (tmp < -firstX && -firstX < 3000) {
         for (tmp; tmp < -firstX; tmp++) {
           objFirst.style.webkitTransform = "translateX(" + -tmp + "px" + ")";
@@ -239,10 +242,94 @@ export default {
       //   objbottom.style.backgroundColor = "#fff";
       // }
     },
+
+    slowShowSecondContentTitle(event) {
+      let obj_secondMainContentHeadLineText = document.getElementById(
+        "secondMainContentHeadLine"
+      );
+      let scroll = window.scrollY;
+      let tmpPosition = parseInt(scroll);
+      if (tmpPosition > 1700) {
+        setTimeout(() => {
+          obj_secondMainContentHeadLineText.classList.add(
+            "slowShowUp50Percent"
+          );
+          obj_secondMainContentHeadLineText.classList.remove("notShow");
+        }, 300);
+      }
+    },
+
+    slowShowSecondContent(event) {
+      let obj_secondMainContentTextContent = document.getElementById(
+        "secondMainContentTextContent"
+      );
+      let scroll = window.scrollY;
+      let tmpPosition = parseInt(scroll);
+      if (tmpPosition > 1700) {
+        setTimeout(() => {
+          obj_secondMainContentTextContent.classList.add("slowShowUp50Percent");
+          obj_secondMainContentTextContent.classList.remove("notShow");
+        }, 200);
+      }
+    },
+    slowShowSocialIconTitle(event) {
+      let obj_linksAndDeclareLeftContent = document.getElementById(
+        "linksAndDeclareLeftContent"
+      );
+      let obj_ul_linksAndDeclareLeftContent = obj_linksAndDeclareLeftContent.getElementsByTagName(
+        "ul"
+      )[0];
+      let obj_0_li_ul_linksAndDeclareLeftContent = obj_ul_linksAndDeclareLeftContent.getElementsByTagName(
+        "li"
+      )[0];
+      let obj_1_li_ul_linksAndDeclareLeftContent = obj_ul_linksAndDeclareLeftContent.getElementsByTagName(
+        "li"
+      )[1];
+      let obj_2_li_ul_linksAndDeclareLeftContent = obj_ul_linksAndDeclareLeftContent.getElementsByTagName(
+        "li"
+      )[2];
+      let obj_3_li_ul_linksAndDeclareLeftContent = obj_ul_linksAndDeclareLeftContent.getElementsByTagName(
+        "li"
+      )[3];
+
+      let scroll = window.scrollY;
+      let tmpPosition = parseInt(scroll);
+
+      if (tmpPosition > 4282) {
+        setTimeout(() => {
+          obj_0_li_ul_linksAndDeclareLeftContent.classList.add(
+            "slowShowUp150px"
+          );
+          obj_0_li_ul_linksAndDeclareLeftContent.classList.remove("notShow");
+        }, 200);
+
+        setTimeout(() => {
+          obj_1_li_ul_linksAndDeclareLeftContent.classList.add(
+            "slowShowUp150px"
+          );
+          obj_1_li_ul_linksAndDeclareLeftContent.classList.remove("notShow");
+        }, 400);
+
+        setTimeout(() => {
+          obj_2_li_ul_linksAndDeclareLeftContent.classList.add(
+            "slowShowUp150px"
+          );
+          obj_2_li_ul_linksAndDeclareLeftContent.classList.remove("notShow");
+        }, 800);
+
+        setTimeout(() => {
+          obj_3_li_ul_linksAndDeclareLeftContent.classList.add(
+            "slowShowUp150px"
+          );
+          obj_3_li_ul_linksAndDeclareLeftContent.classList.remove("notShow");
+        }, 1000);
+      }
+    },
   },
   data() {
     return {
       args: "translate3d(100px,100px,100px)",
+      secondMainContentPosition: 1500,
     };
   },
   computed: {},
@@ -262,6 +349,95 @@ export default {
 .menuItem {
   font-size: 120%;
   color: #fff;
+}
+
+.notShow {
+  opacity: 0;
+}
+.Show {
+  opacity: 1;
+}
+.slowShowUp20Percent {
+  -webkit-animation: slowShowUp20 ease-out 0.7s;
+}
+.slowShowUp50Percent {
+  -webkit-animation: slowShowUp50 ease-out 1.2s;
+}
+.slowShowUp150px {
+  -webkit-animation: slowShowUp150px ease-out 1.2s;
+}
+
+@-webkit-keyframes slowShowUp20 {
+  0% {
+    -webkit-transform: translateY(300px);
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slowShowUp50 {
+  0% {
+    -webkit-transform: translateY(750px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateY(750px);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slowShowUp150px {
+  0% {
+    -webkit-transform: translateY(150px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flash {
+  0%,
+  10%,
+  55%,
+  90%,
+  94%,
+  98%,
+  30% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  92% {
+    opacity: 0.7;
+  }
+  96% {
+    opacity: 0.9;
+  }
+  99% {
+    opacity: 0.95;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #playGame {

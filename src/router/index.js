@@ -5,6 +5,7 @@ import Index from 'views/Index.vue'
 import Blog from 'views/Blog.vue'
 import Travel from 'views/Travel.vue'
 import test from 'views/test.vue'
+import VideoPlayer from "views/Video.vue"
 
 
 
@@ -13,7 +14,7 @@ Vue.use(VueRouter)
 const routes = [{
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
   },
   {
     path: '/index',
@@ -32,7 +33,16 @@ const routes = [{
     // which is lazy-loaded when the route is visited.
     // component: () => import( /* webpackChunkName: "about" */ '../views/test.vue')
     component: test,
-  }
+  },
+  {
+    path: '/video',
+    name: 'video',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    // component: () => import( /* webpackChunkName: "about" */ '../views/test.vue')
+    component: VideoPlayer,
+  },
 ]
 
 const router = new VueRouter({
